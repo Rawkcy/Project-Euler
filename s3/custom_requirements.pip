@@ -1,0 +1,9 @@
+--find-links http://waveaccounting-libs.s3-website-us-east-1.amazonaws.com/
+# Django-storages
+django-storages==1.2a
+# Campaign Monitor Python API
+createsend-python==0.3.2
+python-openid==2.2.5w
+django-openid-auth==0.3.3w
+newrelic==1.0.5.156
+gdata==2.0.14
