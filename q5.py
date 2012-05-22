@@ -1,4 +1,5 @@
 #! /usr/bin/env python
+
 class q5(object):
     def __init__(self, answer):
         self.answer = answer
@@ -24,12 +25,24 @@ if __name__=="__main__":
     q5_run = q5(answer)
     print q5_run.find_lowest_divident(answer)
 
-# def recursion_divisible(num, divisor):
-#     # check if the number is divisible by 1 to 20
-#     if divisor <= 20:
-#         # if divisible
-#         if num%divisor == 0 and divisible(num, ++divisor):
-#             return True
-#         # the number is not divisible by something under 20
-#         return False
-#     return True
+# Another way:
+##! /usr/bin/env python
+#
+#def look_for_it(start):
+#    # keep going until we find it
+#    while (True):
+#        ran = 1
+#        for divisor in range(2,21):
+#            # try next start
+#            if start % divisor != 0:
+#                break
+#            else:
+#                ran = ran + 1
+#        # if loop ran 20 times then we have a winner
+#        if ran == 20:
+#            return start
+#        start = start + 1
+#
+#if __name__=="__main__":
+#    start = 380
+#    print look_for_it(start)
